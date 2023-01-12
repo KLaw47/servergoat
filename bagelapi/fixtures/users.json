@@ -1,0 +1,10 @@
+[
+    {
+        "model": "bagelapi.Users",
+        "PK": 1,
+        "fields": {
+            "name": "Keaton Law",
+            "uid": ,
+        }
+    }
+]

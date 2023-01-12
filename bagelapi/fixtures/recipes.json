@@ -1,0 +1,74 @@
+[
+    {
+        "model": "bagelapi.Recipe",
+        "PK": 1,
+        "fields": {
+            "name": "King Arthur Loaf",
+            "flour_id": 1,
+            "flour_amount": 695,
+            "salt_id": 1,
+            "salt_amount": 1.5,
+            "yeast_id": 1,
+            "yeast_amount": 8,
+            "water": 384,
+            "directions": "Weigh your flour; or measure it by gently spooning it into a cup, then sweeping off any excess. Stir together all of the ingredients (except the cornmeal) in a large bowl, starting with 4 1/2 cups of the flour. Use a sturdy spoon, or your stand mixer equipped with the beater paddle. Mix until everything comes together in a rough, shaggy mass of dough. If you’re kneading the dough by hand, turn it out onto a lightly floured surface, using some of the additional 1/2 cup of flour called for. Fold the far edge of the dough back over on itself towards you, then press it away from you with the heels of your hands. Rotate the dough 90°. Repeat this fold-press-rotate process with a rhythmic, rocking motion for about 6 minutes. When fully kneaded, the dough will be bouncy and smooth. If you’re using your stand mixer, switch to the dough hook and knead the dough at medium speed for about 7 minutes, until it’s smooth, elastic, and feels a bit bouncy. If the dough doesn’t form a ball that clears the sides of the bowl, sprinkle in just enough of the additional flour to make this happen. Place the dough in a bowl that’s been lightly greased with vegetable oil or cooking spray; the bowl you started with is fine. Cover the bowl with plastic wrap or another airtight cover, and let the dough rise at room temperature until it's doubled in size, about 1 to 2 hours. If your kitchen is particularly cold (below 65°F), place the bowl of dough in your turned-off oven with the oven light on. Gently deflate the dough and cut it in half. Pat each half into a rough 6” x 8” oval. Working with one piece of dough at a time, grab a short side and fold the dough like a business letter (one short side into the center, the other short side over it). Use the heel of your hand to press the open edge of the “letter” closed. Gently pat and roll the dough into a log about 10” long. Repeat with the remaining piece of dough. Place the loaves, seam-side down, on a baking sheet (lined with parchment if desired). Sprinkle the pan (or parchment) generously with cornmeal; this will keep the bread from sticking and give it a crunchy bottom crust. Let the loaves rise, lightly covered with greased plastic wrap, for 45 minutes. They should become nicely puffy. Gently poke your index finger into the side of one of the loaves; if the indentation remains, your bread is ready to bake. Towards the end of the rising time, preheat the oven to 450°F. For extra-crusty crust and a great rise, add steam to your oven as follows: While the oven is preheating, place an empty cast-iron frying pan on the lowest rack. Bring 1 cup of water to a boil in the microwave or on the stovetop. When your bread is risen, use a sieve to dust the loaves with a thin coat of flour. Then make three or four 1/2” deep diagonal slashes in each loaf; these slashes will help the bread rise evenly as it bakes. Place the bread in the oven and pour the boiling water into the frying pan below. Quickly shut the oven door. Wear good oven mitts during this process to shield your hands and arms from the steam. Bake the bread for 20 to 25 minutes, until the crust is golden brown and a loaf sounds hollow to the touch when you tap it on the bottom. The interior temperature of the bread should register at least 190°F on a digital thermometer. Turn the oven off, crack the door open, and allow the bread to remain inside for 5 additional minutes; this helps keep the crust crisp. Remove the bread from the oven and cool it on a rack. It’s best not to cut into the bread until it’s cooled down a bit; cutting into hot bread can negatively affect its texture.",
+            "image": null,
+            "public": 1,
+            "user_id": 1
+        }
+    },
+    {
+        "model": "bagelapi.Recipe",
+        "PK": 2,
+        "fields": {
+            "name": "King Arthur Loaf",
+            "flour_id": 1,
+            "flour_amount": 559,
+            "salt_id": 1,
+            "salt_amount": 11.2,
+            "yeast_id": 1,
+            "yeast_amount": 7,
+            "water": 300,
+            "directions": "First, make the dough. Activate the yeast by mixing it with warm water and maple syrup. When it foams, add it to the bowl of a stand mixer fitted with a dough hook, and mix it with the flour and salt until the dough is smooth and not sticky, about 5 to 7 minutes. Then, transfer the dough to a clean work surface and knead by hand for 2 to 3 minutes. Form it into a ball and place it in a large bowl. Cover the bowl with plastic wrap and set it aside for 60 to 90 minutes, until the dough has almost doubled in size. Working in batches, add the bagels to the boiling water and cook them for 1 minute per side. Return them to the baking sheets, coat them with your desired bagel topping, and bake for 14 to 18 minutes, or until they’re lightly golden brown.",
+            "image": null,
+            "public": 1,
+            "user_id": 1
+        }
+    },
+    {
+        "model": "bagelapi.Recipe",
+        "PK": 3,
+        "fields": {
+            "name": "Other Bread",
+            "flour_id": 2,
+            "flour_amount": 600,
+            "salt_id": 2,
+            "salt_amount": 1,
+            "yeast_id": 2,
+            "yeast_amount": 6,
+            "water": 390,
+            "directions": "This is dummy bread. It is not a recipe.",
+            "image": null,
+            "public": 1,
+            "user_id": 1
+        }
+    },
+    {
+        "model": "bagelapi.Recipe",
+        "PK": 4,
+        "fields": {
+            "name": "The Flattest Bread",
+            "flour_id": 3,
+            "flour_amount": 650,
+            "salt_id": 2,
+            "salt_amount": 3,
+            "yeast_id": 3,
+            "yeast_amount": 0,
+            "water": 300,
+            "directions": "This is unleavened. It shall not rise.how dissapointing.",
+            "image": null,
+            "public": 1,
+            "user_id": 1
+        }
+    }
+]
