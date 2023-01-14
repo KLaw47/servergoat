@@ -1,0 +1,30 @@
+[
+    {
+        "model": "bagelapi.Category",
+        "PK": 1,
+        "fields": {
+            "label": "Sweet"
+        }
+    },
+    {
+        "model": "bagelapi.Category",
+        "PK": 1,
+        "fields": {
+            "label": "Flatbreads"
+        }
+    },
+    {
+        "model": "bagelapi.Category",
+        "PK": 1,
+        "fields": {
+            "label": "Pizza"
+        }
+    },
+    {
+        "model": "bagelapi.Category",
+        "PK": 1,
+        "fields": {
+            "label": "No-knead"
+        }
+    }
+]

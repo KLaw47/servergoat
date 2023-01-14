@@ -1,10 +1,11 @@
 [
     {
-        "model": "bagelapi.Users",
+        "model": "bagelapi.User",
         "PK": 1,
         "fields": {
             "name": "Keaton Law",
-            "uid": ,
+            "image_url": "https://picsum.photos/200/300",
+            "uid": 1
         }
     }
 ]
