@@ -18,7 +18,6 @@ class FlourTypeView(ViewSet):
         return Response(serializer.data)
 
 class FlourTypeSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Flour_Type
         fields = ('id', 'flour_type', 'cups', 'grams')
