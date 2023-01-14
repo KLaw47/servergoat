@@ -1,0 +1,29 @@
+[
+    {
+        "model": "bagelapi.Flour_Type",
+        "PK": 1,
+        "fields": {
+            "flour_type": "AP flour",
+            "cups": 1,
+            "grams": 130
+        }
+    },
+    {
+        "model": "bagelapi.Flour_Type",
+        "PK": 1,
+        "fields": {
+            "flour_type": "whole wheat flour",
+            "cups": 1,
+            "grams": 135
+        }
+    },
+    {
+        "model": "bagelapi.Flour_Type",
+        "PK": 1,
+        "fields": {
+            "flour_type": "bread flour",
+            "cups": 1,
+            "grams": 139
+        }
+    }
+]

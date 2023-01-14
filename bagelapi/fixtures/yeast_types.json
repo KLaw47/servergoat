@@ -1,0 +1,29 @@
+[
+    {
+        "model": "bagelapi.Yeast_Type",
+        "PK": 1,
+        "fields": {
+            "yeast_type": "instant yeast",
+            "ounces": 1,
+            "grams": 28.35
+        }
+    },
+    {
+        "model": "bagelapi.Yeast_Type",
+        "PK": 2,
+        "fields": {
+            "yeast_type": "active dry yeast",
+            "ounces": 1,
+            "grams": 28
+        }
+    },
+    {
+        "model": "bagelapi.Yeast_Type",
+        "PK": 3,
+        "fields": {
+            "yeast_type": "fresh yeast",
+            "ounces": 1,
+            "grams": 28.35
+        }
+    }
+]

@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'bagel',
+    'bagelapi',
 ]
 
 CORS_ORIGIN_WHITELIST = (
