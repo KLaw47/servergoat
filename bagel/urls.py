@@ -15,7 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
+from rest_framework import routers
+from bagelapi.views import register_user, check_user
+from bagelapi.views import RecipeView, YeastTypeView, SaltTypeView, FlourTypeView, UserView
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'recipes', RecipeView, 'recipe')
+router.register(r'yeast_types', RecipeView, 'yeast_type')
+router.register(r'salt_types', RecipeView, 'salt_type')
+router.register(r'flour_types', RecipeView, 'flour_type')
+
 
 urlpatterns = [
+    path('register', register_user),
+    path('checkuser', check_user),
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]
