@@ -17,16 +17,16 @@ class RecipeView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-        flour_id = Flour_Type.objects.get(pk=request.data["flour_id"])
-        salt_id = Salt_Type.objects.get(pk=request.data["salt_id"])
-        yeast_id = Yeast_Type.objects.get(pk=request.data["yeast_id"])
-        user_id = User.objects.get(pk=request.data["user_id"])
+        flour = Flour_Type.objects.get(pk=request.data["flour_id"])
+        salt = Salt_Type.objects.get(pk=request.data["salt_id"])
+        yeast = Yeast_Type.objects.get(pk=request.data["yeast_id"])
+        user = User.objects.get(pk=request.data["user_id"])
 
         recipe = Recipe.objects.create(
             name=request.data["name"],
-            flour_id=flour_id,
-            salt_id=salt_id,
-            yeast_id=yeast_id,
+            flour=flour,
+            salt=salt,
+            yeast=yeast,
             water=request.data["water"],
             flour_amount=request.data["flour_amount"],
             salt_amount=request.data["salt_amount"],
@@ -34,23 +34,23 @@ class RecipeView(ViewSet):
             directions=request.data["directions"],
             image=request.data["image"],
             public=request.data["public"],
-            user_id=user_id
+            user=user
         )
         serializer = RecipeSerializer(recipe)
         return Response(serializer.data)
 
     def update(self, request, pk):
 
-        flour_id = Flour_Type.objects.get(pk=request.data["flour_id"])
-        salt_id = Salt_Type.objects.get(pk=request.data["salt_id"])
-        yeast_id = Yeast_Type.objects.get(pk=request.data["yeast_id"])
-        user_id = User.objects.get(pk=request.data["user_id"])
+        flour = Flour_Type.objects.get(pk=request.data["flour_id"])
+        salt = Salt_Type.objects.get(pk=request.data["salt_id"])
+        yeast = Yeast_Type.objects.get(pk=request.data["yeast_id"])
+        user = User.objects.get(pk=request.data["user_id"])
 
         recipe = Recipe.objects.get(pk=pk)
         recipe.name=request.data["name"]
-        recipe.flour_id=flour_id
-        recipe.yeast_id=yeast_id
-        recipe.salt_id=salt_id
+        recipe.flour=flour
+        recipe.yeast=yeast
+        recipe.salt=salt
         recipe.water=request.data["water"]
         recipe.flour_amount=request.data["flour_amount"]
         recipe.salt_amount=request.data["salt_amount"]
@@ -71,5 +71,5 @@ class RecipeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Recipe
-        fields = ('id', 'name', 'flour_id', 'salt_id', 'yeast_id', 'water', 'flour_amount', 'salt_amount', 'yeast_amount', 'directions', 'image', 'public', 'user_id')
+        fields = ('id', 'name', 'flour', 'salt', 'yeast', 'water', 'flour_amount', 'salt_amount', 'yeast_amount', 'directions', 'image', 'public', 'user')
         depth = 1
