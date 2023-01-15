@@ -22,9 +22,9 @@ from bagelapi.views import RecipeView, YeastTypeView, SaltTypeView, FlourTypeVie
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'recipes', RecipeView, 'recipe')
-router.register(r'yeast_types', RecipeView, 'yeast_type')
-router.register(r'salt_types', RecipeView, 'salt_type')
-router.register(r'flour_types', RecipeView, 'flour_type')
+router.register(r'yeast_types', YeastTypeView, 'yeast_type')
+router.register(r'salt_types', SaltTypeView, 'salt_type')
+router.register(r'flour_types', FlourTypeView, 'flour_type')
 
 
 urlpatterns = [

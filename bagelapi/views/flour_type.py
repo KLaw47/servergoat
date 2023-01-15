@@ -7,14 +7,14 @@ class FlourTypeView(ViewSet):
 
     def retrieve(self, request, pk):
 
-        flour_type = Flour_Type.objects.all()
+        flour_type = Flour_Type.objects.get(pk=pk)
         serializer = FlourTypeSerializer(flour_type)
         return Response(serializer.data)
 
     def list(self, request):
 
-        flour_types = Flour_Type.objects.all()
-        serializer = Flour_Type(flour_types, many=True)
+        flour_type = Flour_Type.objects.all()
+        serializer = FlourTypeSerializer(flour_type, many=True)
         return Response(serializer.data)
 
 class FlourTypeSerializer(serializers.ModelSerializer):
