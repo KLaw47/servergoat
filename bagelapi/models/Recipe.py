@@ -14,3 +14,11 @@ class Recipe(models.Model):
     image = models.CharField(max_length=400)
     public = models.BooleanField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    @property
+    def recipe_categories(self):
+        return self.__recipe_categories
+
+    @recipe_categories.setter
+    def recipe_categories(self, value):
+        self.__recipe_categories=value
