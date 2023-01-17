@@ -1,5 +1,5 @@
 from django.db import models
-from bagelapi.models import Flour_Type, Yeast_Type, Salt_Type, User, Category
+from bagelapi.models import Flour_Type, Yeast_Type, Salt_Type, User
 
 class Recipe(models.Model):
     name = models.CharField(max_length=50)
