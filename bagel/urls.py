@@ -18,13 +18,15 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 from bagelapi.views import register_user, check_user
-from bagelapi.views import RecipeView, YeastTypeView, SaltTypeView, FlourTypeView, UserView
+from bagelapi.views import RecipeView, YeastTypeView, SaltTypeView, FlourTypeView, UserView, CategoryView, RecipeCatView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'recipes', RecipeView, 'recipe')
 router.register(r'yeast_types', YeastTypeView, 'yeast_type')
 router.register(r'salt_types', SaltTypeView, 'salt_type')
 router.register(r'flour_types', FlourTypeView, 'flour_type')
+router.register(r'categories', CategoryView, 'category')
+router.register(r'recipe_categories', RecipeCatView, 'recipe_cat')
 
 
 urlpatterns = [

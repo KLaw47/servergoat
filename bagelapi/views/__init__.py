@@ -4,3 +4,5 @@ from .salt_type import SaltTypeView
 from .yeast_types import YeastTypeView
 from .recipe import RecipeView
 from .user import UserView
+from .category import CategoryView
+from .recipe_cat import RecipeCatView

@@ -1,6 +1,6 @@
 from django.db import models
+from bagelapi.models import Recipe, Category
 
 class Recipe_Cat(models.Model):
-    recipe_id = models.ForeignKey("Recipe", on_delete=models.CASCADE)
-    category_id = models.ForeignKey("Category", on_delete=models.CASCADE)
-    
+    recipe = models.ForeignKey("Recipe", on_delete=models.CASCADE)
+    category = models.ForeignKey("Category", on_delete=models.CASCADE)

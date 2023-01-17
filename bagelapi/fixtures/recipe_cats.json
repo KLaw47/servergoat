@@ -1,0 +1,18 @@
+[
+    {
+        "model": "bagelapi.Recipe_Cat",
+        "PK": 1,
+        "fields": {
+            "recipe": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "bagelapi.Recipe_Cat",
+        "PK": 2,
+        "fields": {
+            "recipe_id": 2,
+            "category_id": 2
+        }
+    }
+]
