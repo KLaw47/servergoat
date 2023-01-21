@@ -27,6 +27,7 @@ router.register(r'salt_types', SaltTypeView, 'salt_type')
 router.register(r'flour_types', FlourTypeView, 'flour_type')
 router.register(r'categories', CategoryView, 'category')
 router.register(r'recipe_categories', RecipeCatView, 'recipe_cat')
+router.register(r'users', UserView, 'user')
 
 
 urlpatterns = [
