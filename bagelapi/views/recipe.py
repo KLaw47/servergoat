@@ -13,6 +13,10 @@ class RecipeView(ViewSet):
     def list(self, request):
 
         recipes = Recipe.objects.all()
+
+        user_recipes = request.query_params.get('user', None)
+        if user_recipes is not None:
+            recipes = recipes.filter(user=user_recipes)
         serializer = RecipeSerializer(recipes, many=True)
         return Response(serializer.data)
 

@@ -5,7 +5,16 @@
         "fields": {
             "name": "Keaton Law",
             "image_url": "https://picsum.photos/200/300",
-            "uid": 1
+            "uid": "HMjHxm0p7SSpn5YKZFaxWvXsQbv2"
+        }
+    },
+    {
+        "model": "bagelapi.User",
+        "PK": 2,
+        "fields": {
+            "name": "beeeeenz",
+            "image_url": "https://picsum.photos/200/300",
+            "uid": "1"
         }
     }
 ]
