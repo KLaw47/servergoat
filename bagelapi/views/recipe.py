@@ -24,21 +24,28 @@ class RecipeView(ViewSet):
         flour = Flour_Type.objects.get(pk=request.data["flour_id"])
         salt = Salt_Type.objects.get(pk=request.data["salt_id"])
         yeast = Yeast_Type.objects.get(pk=request.data["yeast_id"])
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data['user_id'])
+        water_amount = float(request.data["water"])
+        flour_grams = flour.grams
+        yeast_grams = yeast.grams
+        salt_grams = salt.grams
+        total_salt = float(request.data["salt_amount"]) * salt_grams
+        total_flour = float(request.data["flour_amount"]) * flour_grams
+        total_yeast = float(request.data["yeast_amount"]) * yeast_grams
 
         recipe = Recipe.objects.create(
             name=request.data["name"],
             flour=flour,
             salt=salt,
             yeast=yeast,
-            water=request.data["water"],
-            flour_amount=request.data["flour_amount"],
-            salt_amount=request.data["salt_amount"],
-            yeast_amount=request.data["yeast_amount"],
+            water=str(water_amount * 240),
+            flour_amount=total_flour,
+            salt_amount=total_salt,
+            yeast_amount=total_yeast,
             directions=request.data["directions"],
             image=request.data["image"],
             public=request.data["public"],
-            user=user
+            user=user,
         )
         serializer = RecipeSerializer(recipe)
         return Response(serializer.data)
